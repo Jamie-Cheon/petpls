@@ -1,0 +1,78 @@
+.bkg-orange {
+    background-color: #fe9c3c;
+}
+
+.bkg-light {
+    background-color: #feefd7;
+}
+
+.feature-1 {
+        border-bottom: 1px solid #000;
+    height: 700px;
+}
+
+.font-large {
+    font-size: 8rem;
+}
+.hero-cat {
+    top: -400px;
+    left:35%;
+}
+.mouse {
+    position: absolute;
+    top: 10px;
+}
+.auto-tee {
+    animation-name: float;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes float {
+    from {top: -150px;}
+    to {top: 10%;}
+}
+
+/*.oval {*/
+/*    background-color: #bef752;*/
+/*    border-radius: 50%;*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*}*/
+/** neon **/
+
+/*.neon {*/
+/*  padding: 4rem 6rem 5.5rem;*/
+/*  border: 0.4rem solid #bef752;*/
+/*  border-radius: 50%;*/
+/*  width: 300px;*/
+/*  height: 500px;*/
+/*  text-transform: uppercase;*/
+/*  animation: flicker 1.5s infinite alternate;*/
+/*        position: absolute;*/
+/*    top: -400px;*/
+/*    left: 400px;*/
+/*    z-index: -1;*/
+/*}*/
+
+/*!* Animate neon flicker *!*/
+/*@keyframes flicker {*/
+
+/*    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {*/
+
+/*        box-shadow:*/
+/*            0 0 .5rem #bef752,*/
+/*            inset 0 0 .5rem #bef752,*/
+/*            0 0 2rem #bef752,*/
+/*            inset 0 0 2rem #bef752,*/
+/*            0 0 4rem #bef752,*/
+/*            inset 0 0 4rem #bef752;*/
+/*    }*/
+
+/*    20%, 24%, 55% {*/
+/*        text-shadow: none;*/
+/*        box-shadow: none;*/
+/*    }*/
+/*}*/
