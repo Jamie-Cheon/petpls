@@ -1,27 +1,65 @@
-.bkg-orange {
-    background-color: #fe9c3c;
+/*------------------------
+	font
+-------------------------*/
+@font-face {
+    font-family: 'Desinem';
+    src: url("../fonts/Desinem/Desinem.otf");
+    src: url("../fonts/Desinem/Desinem.otf") format("otf"), url("../fonts/Desinem/Desinem.ttf") format("ttf"), url("../fonts/Desinem/Desinem.woff") format("woff"), url("../fonts/Desinem/Desinem.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
-.bkg-light {
-    background-color: #feefd7;
+.desinem {
+    font-family: 'Desinem', 'Helvetica Neue', sans-serif;
 }
 
-.feature-1 {
-        border-bottom: 1px solid #000;
-    height: 700px;
-}
-
-.font-large {
-    font-size: 8rem;
-}
-.hero-cat {
-    top: -400px;
-    left:35%;
-}
-.mouse {
+.circle {
+    background-color: crimson;
+    width: 500px;
+    height: 500px !important;
     position: absolute;
-    top: 10px;
+    z-index: -1;
+    border-radius: 50%;
 }
+
+.balloon {
+    position: absolute;
+    width: 200px !important;
+    height: 200px;
+    right: 10%;
+}
+
+.cake {
+    position: absolute;
+    width: 300px !important;
+    height: 200px;
+    left: 30%;
+    bottom: 10%;
+    transform: rotate(15deg);}
+/*.bkg-orange {*/
+/*    background-color: #fe9c3c;*/
+/*}*/
+
+/*.bkg-light {*/
+/*    background-color: #8de8f5;*/
+/*}*/
+
+/*.feature-1 {*/
+/*        !*border-bottom: 1px solid #000;*!*/
+/*    height: 700px;*/
+/*}*/
+
+/*.font-large {*/
+/*    font-size: 8rem;*/
+/*}*/
+/*.hero-cat {*/
+/*    top: -400px;*/
+/*    left:35%;*/
+/*}*/
+/*.mouse {*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*}*/
 .auto-tee {
     animation-name: float;
     animation-duration: 2s;
@@ -31,8 +69,14 @@
 }
 
 @keyframes float {
-    from {top: -150px;}
-    to {top: 10%;}
+    from {
+        top: 5%;
+        /*transform: rotate(45deg);*/
+}
+    to {
+        top: 10%;
+        /*transform: rotate(80deg);*/
+    }
 }
 
 /*.oval {*/

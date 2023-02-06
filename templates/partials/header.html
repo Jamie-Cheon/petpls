@@ -1,0 +1,68 @@
+{% load static %}
+<!-- Header -->
+<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="window-height"
+        data-compact-threshold="window-height">
+    <div class="header-inner">
+        <div class="row nav-bar">
+            <div class="column width-12 nav-bar-inner">
+                <div class="logo">
+                    <div class="logo-inner">
+                        <a href="index.html"><img src="{% static 'images/logo/logo-dark.png' %}"
+                                                  alt="Sartre Logo"/></a>
+                        <a href="index.html"><img src="{% static 'images/logo/logo.png' %}" alt="Sartre Logo"/></a>
+                    </div>
+                </div>
+                <nav class="navigation nav-block secondary-navigation nav-right">
+                    <ul>
+                        {#                                    <li>#}
+                        {#										<div class="v-align-middle">#}
+                        {#											<ul class="social-list list-horizontal">#}
+                        {#												<li><a href="#" class="nav-icon"><span class="icon-twitter small"></span></a></li>#}
+                        {#												<li><a href="#" class="nav-icon"><span class="icon-facebook small"></span></a></li>#}
+                        {#											</ul>#}
+                        {#										</div>#}
+                        {#									</li>#}
+                        <li>
+                            <div class="v-align-middle">
+                                <a href="#book" class="button scroll-link small pull-right no-margin-bottom">BOOK
+                                    YOUR VISIT</a>
+                            </div>
+                        </li>
+                        <li class="aux-navigation hide">
+                            <!-- Aux Navigation -->
+                            <a href="#" class="navigation-show side-nav-show nav-icon">
+                                <span class="icon-menu"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navigation nav-block primary-navigation sub-menu-indicator nav-right no-margin-right">
+                    <ul>
+                        <li class="current">
+                            <a href="index.html">OUR STORY</a>
+                        </li>
+                        <li class="contains-sub-menu">
+                            <a href="about-style-one.html">THE CATS</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="index-mobile-application.html">Currrent Cats</a>
+                                </li>
+                                <li>
+                                    <a href="index-mobile-application.html">Foster a Cat</a>
+                                </li>
+                                <li>
+                                    <a href="index-mobile-application.html">Adoptions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about-style-one.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+

@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_name %}
+    HOME
+{% endblock page_name %}
+
+{% block content %}
+    <!-- Content -->
+    <div class="content clearfix">
+
+        <!-- Feature Section 3 -->
+        <section class="section-block feature-3 bkg-theme">
+            <div class="row flex">
+                <div class="column width-5">
+                    <div class="feature-content">
+                        <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
+                            <p class="color-white weight-bold mb-0">PETPLS Café and Supply</p>
+                            <h1 class="color-white mb-0 title-xlarge desinem">Where the Cool Cats HangOut</h1>
+                            <p class="color-white">With Sartre Pixls you get a full library of photo tools optimized for touch devices. Simple, powerful and intuitive.</p>
+                            <a class="button medium text-uppercase border-white bkg-hover-charcoal color-white color-hover-white left mb-20 mb-mobile-50">
+                                Book Your Visit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column width-7 center">
+                    <div class="feature-image">
+                        <div class="feature-image-inner pt-20 no-padding-on-mobile">
+                            <img src="{% static 'images/hero-cat.png' %}" alt=""/>
+                        </div>
+                    </div>
+                    <div class="feature-image balloon auto-tee">
+                        <div class="feature-image-inner pt-20 no-padding-on-mobile">
+                            <img src="{% static 'images/candy.png' %}" alt=""/>
+                        </div>
+                    </div>
+                    <div class="feature-image cake auto-tee">
+                        <div class="feature-image-inner pt-20 no-padding-on-mobile">
+                            <img src="{% static 'images/balloon.png' %}" alt=""/>
+                        </div>
+                    </div>
+                    <div class="circle"></div>
+                    {#                            <div class="balloon" style="background-image: url({% static 'images/sheep-balloon.png' %})"></div>#}
+                </div>
+            </div>
+        </section>
+        <!-- Feature Section 3 -->
+
+        <!-- Features -->
+        <section class="section-block bkg-grey-ultralight">
+            <div class="row">
+                <div class="column width-12 center">
+                    <h2 class="mb-80">Start Editing Some Pixls</h2>
+                </div>
+                <div class="column width-5 offset-1">
+                    <div class="feature-column medium left">
+                        <span class="feature-icon icon-adjust icon-circled medium bkg-theme color-white"></span>
+                        <div class="feature-text">
+                            <h6 class="weight-bold text-uppercase">Light Adjustments</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column width-5">
+                    <div class="feature-column medium left">
+                        <span class="feature-icon icon-colours icon-circled medium bkg-theme color-white"></span>
+                        <div class="feature-text">
+                            <h6 class="weight-bold text-uppercase">Color Correction</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column width-5 offset-1">
+                    <div class="feature-column medium left">
+                        <span class="feature-icon icon-crop icon-circled medium bkg-theme color-white"></span>
+                        <div class="feature-text">
+                            <h6 class="weight-bold text-uppercase">Auto Cropping</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column width-5">
+                    <div class="feature-column medium left">
+                        <span class="feature-icon icon-eye icon-circled medium bkg-theme color-white"></span>
+                        <div class="feature-text">
+                            <h6 class="weight-bold text-uppercase">Red Eye Correction</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features -->
+
+    </div>
+    <!-- Content End -->
+
+{% endblock %}
+
