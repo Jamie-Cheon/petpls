@@ -42,6 +42,14 @@ Copyright: ThemeMountain
 [1. Typography]
 */
 
+@font-face {
+	font-family: 'Desinem';
+	src: url("../fonts/Desinem/Desinem.otf");
+	src: url("../fonts/Desinem/Desinem.otf") format("otf"), url("../fonts/Desinem/Desinem.ttf") format("ttf"), url("../fonts/Desinem/Desinem.woff") format("woff"), url("../fonts/Desinem/Desinem.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	letter-spacing: 0;
@@ -203,7 +211,7 @@ a.animated-link{
 a, 
 p a,
 .box a:not(.button){
-	color: #ed494f;
+	color: #d2b18f;
 }
 .sidebar .widget a,
 .shop .product-summary a,
@@ -309,7 +317,8 @@ body,
 .featured-media:after,
 .section-block:not([class*="bkg-"]),
 .fullscreen-sections-wrapper{
-	background-color: #fff;
+	/*background-color: #fff;*/
+    background-color: #d2b18f;
 }
 
 /* greyscale */
@@ -389,7 +398,7 @@ body,
 
 /* theme */
 .bkg-theme{
-	background-color: #ed494f;
+	/*background-color: #f6bfff;*/
 	border-color: #ed494f;
 }
 .bkg-hover-theme:hover{
@@ -439,10 +448,10 @@ body,
 	transform: skewY(-4.5deg);
 	z-index: 5;
 }
-.footer .footer-top{
-	padding-top: 9rem;
-	padding-bottom: 0;
-}
+/*.footer .footer-top{*/
+/*	padding-top: 9rem;*/
+/*	padding-bottom: 9rem;*/
+/*}*/
 .grid-filter-menu{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
@@ -546,13 +555,14 @@ body,
 	border-bottom: 1px solid transparent;
 }
 .header-transparent .header-inner > .nav-bar{
-	border-bottom: 1px solid rgba(255,255,255, 0.2);
+	/*border-bottom: 1px solid rgba(255,255,255, 0.2);*/
 }
 
 /* Background Header - On Scroll! */
 .header-background .header-inner{
-	background-color: #fff;
-	border-color: #eee;
+	background-color: #695142;
+	/*border-color: #d2b18f;*/
+	opacity: 0.9;
 }
 .header-background .header-inner > .nav-bar{
 	border-bottom: none;
@@ -571,7 +581,7 @@ body,
 	border-top: none;
 }
 .mobile .header .header-inner{
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 }
 .mobile .header + .content{
 	padding-top: 0;
@@ -580,10 +590,11 @@ body,
 	.header .header,
 	.header .header-inner,
 	.header.header-transparent .header-inner{
-		background-color: #fff;
+		background-color: #695142;
+		opacity: 0.9;
 	}
 	.header .header-inner{
-		border-bottom: 1px solid #eee;
+		/*border-bottom: 1px solid #eee;*/
 	}
 	.header .header-inner > .nav-bar{
 		padding: 0;
@@ -596,12 +607,12 @@ body,
 
 /* Initial Logo Width */
 .header .logo{
-	width: 3.5rem;
+	width: 6.5rem;
 }
 
 /* Compacted Header Logo Width */
 .header-compact .logo{
-	width: 3.5rem;
+	width: 6.5rem;
 }
 
 /* Initial Logo Styling */
@@ -725,17 +736,21 @@ body,
 
 /* Transparent Header Initial, Hover & Current Nav Colors */
 .header-transparent .navigation > ul > li > a{
-	color: #fff;
+    color: #695142;
+	/*color: #fff;*/
 	opacity: 0.6;
 }
-.header-transparent .navigation > ul > li > a:hover{
-	color: #fff;
+.header-transparent .navigation > ul > li > a:hover {
+	color: #695142;
 	opacity: 1;
+	font-weight: 700;
 }
 .header-transparent .navigation > ul > li.current > a,
 .header-transparent .navigation > ul > li.current > a:hover{
-	color: #fff;
+    color: #695142;
+	/*color: #fff;*/
 	opacity: 1;
+	font-weight: 700;
 }
 
 /* Nav Dark Initial, Hover & Current Colors */
@@ -751,18 +766,24 @@ body,
 
 /* Header Background Initial, Hover & Current Nav Colors - On Scroll! */
 .header-background .navigation > ul > li > a{
-	color: #999;
+	/*color: #999;*/
+    color: #f9f5f0;
 }
 .header-background .navigation > ul > li.current > a{
-	color: #000;
+	/*color: #000;*/
+    color: #f9f5f0;
 	border-bottom: none;
 }
 .header-background .navigation > ul > li.current > a:hover{
-	color: #000;
+	/*color: #000;*/
+    color: #f9f5f0;
+    font-weight: 700;
 }
 .header-background .navigation > ul > li > a:hover{
-	color: #000;
+	/*color: #000;*/
 	opacity: 1;
+    color: #f9f5f0;
+    font-weight: 700;
 }
 
 /* Sub Menus, Mega Menus, Dropdown List Initial Colors */
@@ -917,16 +938,18 @@ body,
 /* Button, Dropdown Button Initial, Hover & Active Colors */
 .header .v-align-middle > .button:not(.nav-icon),
 .header .dropdown > .button:not(.nav-icon){
-	background: transparent;
-	border-color: #fff;
-	color: #fff;
+background: #695142;
+    border-color: #695142;
+    font-weight: 700;
+    color: #d2b18f;
 }
 .header .v-align-middle > .button:not(.nav-icon):hover,
 .header .dropdown > .button:not(.nav-icon):hover,
 .header .dropdown > .button.active:not(.nav-icon){
-	background-color: #ed494f;
-	border-color: transparent;
-	color: #fff;
+background-color: transparent;
+    font-weight: 700;
+    border-color: #695142;
+    color: #695142;
 }
 
 /* Transparent Header Division Color */
@@ -941,7 +964,8 @@ body,
 
 /* Transparent Header Initial, Hover & Active Colors */
 .header-transparent .navigation .nav-icon{
-	color: rgba(255,255,255,0.6);
+    color: #695142;
+	/*color: rgba(255,255,255,0.6);*/
 	opacity: 1;
 }
 .header-transparent .navigation .nav-icon:hover,
@@ -979,18 +1003,20 @@ body,
 }
 .header-background .v-align-middle > .button:not(.nav-icon),
 .header-background .dropdown > .button:not(.nav-icon){
-	background: #232323;
-	border-color: transparent;
-	color: #fff;
+    background: #f9f5f0;
+    border-color: transparent;
+    color: #695142;
+    font-weight: 700;
 }
 .header-background .v-align-middle > .button:not(.nav-icon):hover,
 .header-background .dropdown > .button:not(.nav-icon):hover{
-	background-color: #ed494f;
+	background-color: #d2b18f;
 	border-color: transparent;
 	color: #fff;
 }
 .header-background .navigation .nav-icon{
-	color: #999;
+	/*color: #999;*/
+    color: #f9f5f0;
 }
 .header-background .navigation .nav-icon:hover,
 .header-background .navigation .nav-icon.active{
@@ -1041,18 +1067,18 @@ body,
 	}
 	.header .v-align-middle > .button:not(.nav-icon),
 	.header .dropdown > .button:not(.nav-icon){
-		background: #232323;
-		border-color: transparent;
-		color: #fff;
+    background: #f9f5f0;
+    border-color: transparent;
+    color: #695142;
 	}
 	.header .v-align-middle > .button:not(.nav-icon):hover,
 	.header .dropdown > .button:not(.nav-icon):hover{
-		background-color: #ed494f;
+		background-color: #d2b18f;
 		border-color: transparent;
 		color: #fff;
 	}
 	.header .navigation .nav-icon{
-		color: #666;
+		color: #f9f5f0;
 	}
 	.header .navigation .nav-icon:hover,
 	.header .dropdown .nav-icon.active{
@@ -1126,7 +1152,7 @@ body,
 	width: 12rem;
 }
 .side-navigation-wrapper{
-	background-color: #111;
+	background-color: antiquewhite;
 	box-shadow: none !important;
 }
 .side-navigation-header{
@@ -1141,11 +1167,12 @@ body,
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	font-weight: 300;
-	color: #888;
+	color: #695142;
 	position: relative;
+	    font-family: 'Desinem';
 }
 .side-navigation ul li.current > a{
-	color: #fff;
+	color: #d2b18f;
 	font-weight: 400;
 }
 .side-navigation > ul > li > a:after {
@@ -1187,7 +1214,7 @@ body,
 	text-transform: none;
 	font-size: 1.2rem;
 	font-weight: normal;
-	color: #666;
+	color: #695142;
 	letter-spacing: 0.05em;
 }
 .side-navigation .sub-menu a:hover{
@@ -1247,7 +1274,7 @@ body,
 /* Side Nav Hover Colors */
 .side-navigation ul li a:hover,
 .side-navigation ul li.current a:hover{
-	color: #fff;
+	color: #d2b18f;
 }
 
 /* Side Nav Widget */
@@ -1468,15 +1495,6 @@ body,
 }
 [class*="intro-title-"].xsmall{
 	height: 15rem;
-}
-.intro-title-2{
-	background-image: url(../images/slider/slide-2-page-intro.jpg);	
-}
-.intro-title-2-1{
-	background-image: url(../images/slider/slide-8-page-intro.jpg);	
-}
-.intro-title-2-2{
-	background-image: url(../images/slider/slide-9-page-intro.jpg);	
 }
 @media only screen and (max-width: 768px){
 	[class*="intro-title-"],
@@ -1866,29 +1884,10 @@ body,
 	line-height: 4.8rem;
 }
 
-/* Stats */
-.stats-1-1{
-	background-image: url(../images/mobile-application/generic/hero-1.jpg);
-}
-
-/* Hero */
-.hero-5-1 .media-column{
-	background-image: url(../images/mobile-application/generic/hero-half-1.jpg);
-}
-.hero-5-2 .media-column{
-	background-image: url(../images/team/hero-half-2.jpg);
-}
-
 /* Call to Action */
 .call-to-action-2-1{
-	background-image: url(../images/mobile-application/generic/signup-1.jpg);
 	background-size: cover;
 	background-position: center;
-}
-
-/* Signup 2 */
-.signup-2-1{
-	background-image: url(../images/mobile-application/generic/signup-1.jpg);
 }
 
 /* Fullscreen Section */
@@ -1899,15 +1898,6 @@ body,
 	padding: 4rem;
 	border: 1px solid rgba(255,255,255,0.3);
 	overflow: visible;
-}
-.fullscreen-bkg-2{
-	background-image: url(../images/mobile-application/slider/slide-3-fs.jpg);
-}
-.fullscreen-bkg-3{
-	background-image: url(../images/mobile-application/slider/slide-4-fs.jpg);
-}
-.fullscreen-bkg-4{
-	background-image: url(../images/mobile-application/slider/slide-5-fs.jpg);
 }
 
 /*------------------------------------------------------------------
@@ -1975,9 +1965,6 @@ body,
 */
 
 /* Hero Sections */
-.hero-5-contact-1 .media-column{
-	background-image: url(../images/contact/hero-half.jpg);
-}
 .hero-5-contact-1 [class*="stats-"] .stat-inner{
 	text-align: left;
 }
@@ -2799,7 +2786,7 @@ textarea.required-field{
 .footer .widget,
 .footer address{
 	font-size: 1.3rem;
-	color: #999;
+	color: #d2b18f;
 	text-transform: none;
 	font-style: normal;
 }
@@ -2816,6 +2803,7 @@ textarea.required-field{
 	margin-bottom: 0;
 	font-size: 1.1rem;
 	float: none;
+	color: #d2b18f;
 }
 
 /* Footer Widgets */
@@ -3703,48 +3691,4 @@ only screen and (		 min-device-pixel-ratio: 2),
 only screen and (			min-resolution: 192dpi),
 only screen and (				min-resolution: 2dppx) {
 
-	/* Intro Sections */
-	.intro-title-2{
-		background-image: url(../images/slider/slide-2-page-intro@2x.jpg);	
-	}
-	.intro-title-2-1{
-		background-image: url(../images/slider/slide-8-page-intro@2x.jpg);	
-	}
-	.intro-title-2-2{
-		background-image: url(../images/slider/slide-9-page-intro@2x.jpg);	
-	}
-
-	/* Fullscreen Sections */
-	.fullscreen-bkg-2{
-		background-image: url(../images/mobile-application/slider/slide-3-fs@2x.jpg);
-	}
-	.fullscreen-bkg-3{
-		background-image: url(../images/mobile-application/slider/slide-4-fs@2x.jpg);
-	}
-	.fullscreen-bkg-4{
-		background-image: url(../images/mobile-application/slider/slide-5-fs@2x.jpg);
-	}
-
-	/* Stat Sections */
-	.stats-1-1{
-		background-image: url(../images/mobile-application/generic/hero-1@2x.jpg);
-	}
-
-	/* Hero Sections */
-	.hero-5-1 .media-column{
-		background-image: url(../images/mobile-application/generic/hero-half-1@2x.jpg);
-	}
-	.hero-5-2 .media-column{
-		background-image: url(../images/team/hero-half-2@2x.jpg);
-	}
-
-	/* Call to Action Sections */
-	.call-to-action-2-1{
-		background-image: url(../images/mobile-application/generic/call-to-action-1@2x.jpg);
-	}
-
-	/* Signup */
-	.signup-2-1{
-		background-image: url(../images/mobile-application/generic/signup-1@2x.jpg);
-	}
 }

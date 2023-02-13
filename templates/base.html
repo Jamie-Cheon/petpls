@@ -10,7 +10,15 @@
 	<meta property="og:image" content="Your-Image-Url" />
 	<meta property="og:description" content="Your-Page-Description" />
 	<title>Sartre | Multipurpose HTML5 Template - Mobile Application</title>
-{#	<link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">#}
+
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'images/favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 	<!-- Font -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:300,400,700' rel='stylesheet' type='text/css'>
@@ -19,6 +27,8 @@
 	<link rel="stylesheet" href="{% static 'css/core.min.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/skin-mobile-application.css' %}" />
     <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+    {% block css %}
+    {% endblock %}
 
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,13 +51,13 @@
             <nav class="side-navigation">
                 <ul>
                     <li class="current">
-                        <a href="#">OUR STORY</a>
+                        <a href="{% url 'index' %}">HOME</a>
                     </li>
                     <li>
-                        <a href="#" class="contains-sub-menu">THE CATS</a>
+                        <a href="{% url 'cats' %}" class="contains-sub-menu">THE CATS</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="index-mobile-application.html">Current Cats</a>
+                                <a href="{% url 'cats' %}">Current Cats</a>
                             </li>
                             <li>
                                 <a href="index-mobile-application.html">Foster a Cat</a>
@@ -58,17 +68,16 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">CONTACT US</a>
+                        <a href="{% url 'contact' %}">CONTACT US</a>
                     </li>
                 </ul>
             </nav>
             <div class="side-navigation-footer">
                 <ul class="social-list list-horizontal">
-                    <li><a href="#"><span class="icon-twitter small"></span></a></li>
-                    <li><a href="#"><span class="icon-facebook small"></span></a></li>
                     <li><a href="#"><span class="icon-instagram small"></span></a></li>
+                    <li><a href="#"><span class="icon-facebook small"></span></a></li>
                 </ul>
-                <p class="copyright no-margin-bottom">&copy; 2014 THEMEMOUNTAIN.</p>
+                <p class="copyright no-margin-bottom">&copy; 2023 PETPLS.</p>
             </div>
         </div>
     </div>
@@ -91,5 +100,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
 	<script src="{% static 'js/timber.master.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+{% block js %}
+{% endblock %}
 </body>
 </html>

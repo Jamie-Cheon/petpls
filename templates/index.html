@@ -8,17 +8,19 @@
     <!-- Content -->
     <div class="content clearfix">
 
-        <!-- Feature Section 3 -->
-        <section class="section-block feature-3 bkg-theme">
+        <!-- Hero section -->
+        <section class="section-block feature-3 bkg-tan">
             <div class="row flex">
                 <div class="column width-5">
                     <div class="feature-content">
                         <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
-                            <p class="color-white weight-bold mb-0">PETPLS Café and Supply</p>
-                            <h1 class="color-white mb-0 title-xlarge desinem">Where the Cool Cats HangOut</h1>
-                            <p class="color-white">With Sartre Pixls you get a full library of photo tools optimized for touch devices. Simple, powerful and intuitive.</p>
-                            <a class="button medium text-uppercase border-white bkg-hover-charcoal color-white color-hover-white left mb-20 mb-mobile-50">
-                                Book Your Visit
+                            <p class="color-brown weight-bold mb-0">PETPLS Café and Supply</p>
+                            <h1 class="color-brown mb-0 title-xlarge font-4rem-mobile desinem">Where the Cool Cats HangOut</h1>
+                            <p class="color-brown">With Sartre Pixls you get a full library of photo tools optimized for
+                                touch devices. Simple, powerful and intuitive.</p>
+                            <a href="{% url 'book' %}"
+                               class="rounded weight-bold button medium text-uppercase border-brown bkg-hover-brown color-brown color-hover-tan left mb-20 mb-mobile-50">
+                                BOOK YOUR VISIT
                             </a>
                         </div>
                     </div>
@@ -26,76 +28,257 @@
                 <div class="column width-7 center">
                     <div class="feature-image">
                         <div class="feature-image-inner pt-20 no-padding-on-mobile">
-                            <img src="{% static 'images/hero-cat.png' %}" alt=""/>
+                            <img src="{% static 'images/cat04.png' %}" alt=""/>
                         </div>
                     </div>
-                    <div class="feature-image balloon auto-tee">
-                        <div class="feature-image-inner pt-20 no-padding-on-mobile">
-                            <img src="{% static 'images/candy.png' %}" alt=""/>
-                        </div>
-                    </div>
-                    <div class="feature-image cake auto-tee">
-                        <div class="feature-image-inner pt-20 no-padding-on-mobile">
-                            <img src="{% static 'images/balloon.png' %}" alt=""/>
-                        </div>
-                    </div>
-                    <div class="circle"></div>
+                    {#                    <img src="{% static 'images/paw_print.png' %}" alt=""/>#}
+                    {#                    <canvas class="no-margins" id="canvas"></canvas>#}
+                    {#                    <div class="feature-image balloon">#}
+                    {#                        <div class="feature-image-inner pt-20 no-padding-on-mobile">#}
+                    {#                            <img src="{% static 'images/yarn_ball.png' %}" alt=""/>#}
+                    {#                        </div>#}
+                    {#                    </div>#}
+                    {#                    <div class="feature-image cake z-minus">#}
+                    {#                        <div class="feature-image-inner pt-20 no-padding-on-mobile">#}
+                    {#                            <img src="{% static 'images/paw_print.png' %}" alt=""/>#}
+                    {#                        </div>#}
+                    {#                    </div>#}
+                    {#                    <div class="circle"></div>#}
                     {#                            <div class="balloon" style="background-image: url({% static 'images/sheep-balloon.png' %})"></div>#}
                 </div>
+                {#                <img class="treat-4" src="{% static 'images/treat.png' %}" alt="">#}
+                {#                <img class="treat-5" src="{% static 'images/treat.png' %}" alt="">#}
+                {#                <img class="treat-6" src="{% static 'images/treat.png' %}" alt="">#}
             </div>
         </section>
-        <!-- Feature Section 3 -->
+        <!-- Hero section -->
 
-        <!-- Features -->
-        <section class="section-block bkg-grey-ultralight">
+        <div class="wavy-header bkg-tan">
+            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
+                 xml:space="preserve">
+<path class="wave" style="stroke: none; fill:#695142" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
+	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
+	z"/>
+</svg>
+        </div>
+        <!-- About us -->
+        <div class="section-block replicable-content bkg-brown">
             <div class="row">
-                <div class="column width-12 center">
-                    <h2 class="mb-80">Start Editing Some Pixls</h2>
-                </div>
-                <div class="column width-5 offset-1">
-                    <div class="feature-column medium left">
-                        <span class="feature-icon icon-adjust icon-circled medium bkg-theme color-white"></span>
-                        <div class="feature-text">
-                            <h6 class="weight-bold text-uppercase">Light Adjustments</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div class="column width-12">
+                    <h3 class="mb-50 desinem color-tan">Our Story <img class="paw-print"
+                                                                       src="{% static 'images/paw_print.png' %}" alt="">
+                    </h3>
+                    <div class="row">
+                        <div class="column width-12">
+                            <div class="row">
+                                <div class="column width-6">
+                                    <div class="row">
+                                        <div class="column width-11 offset-1 color-tan">
+                                            <p class="mb-20">Sed ut perspiciatis unde omnis iste natus error sit
+                                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                                                dicta sunt explicabo.</p>
+                                            <p class="mb-mobile-20">Nemo enim ipsam voluptatem quia voluptas sit
+                                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                                                qui ratione voluptatem sequi nesciunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column width-6 color-tan">
+                                    <p class="mb-20">Voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                                        dicta sunt explicabo.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column width-5">
-                    <div class="feature-column medium left">
-                        <span class="feature-icon icon-colours icon-circled medium bkg-theme color-white"></span>
-                        <div class="feature-text">
-                            <h6 class="weight-bold text-uppercase">Color Correction</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                {#                <img class="right paw-print" src="{% static 'images/paw_print.png' %}" alt="">#}
+                {#                <img class="paw-print" src="{% static 'images/paw_print.png' %}" alt="">#}
+                <img class="treat-1" src="{% static 'images/treat.png' %}" alt="">
+                <img class="treat-2" src="{% static 'images/treat.png' %}" alt="">
+                <img class="treat-3" src="{% static 'images/treat.png' %}" alt="">
+            </div>
+        </div>
+        <!-- Content End -->
+        {#<div class="wave-bottom">#}
+        {#  <svg class="svg2" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">#}
+        {#    <path d="M0,10 C150,80 250,0 500,10 L500,00 L0,0 z" style="stroke: none; fill:#695142 ;"></path>#}
+        {#  </svg>#}
+        {#</div>#}
+        <div class="wavy-header bkg-brown">
+            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
+                 xml:space="preserve">
+<path class="wave" style="stroke: none; fill:#d2b18f" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
+	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
+	z"/>
+</svg>
+        </div>
+        <!-- Marquee -->
+        {#        <div class="section-block bkg-brown pb-0">#}
+        {#            <div class="marquee">#}
+        {#                <div class="track">#}
+        {#                    <h1 class="title-xlarge desinem color-tan"> MEET OUR CATS <img src="{% static 'images/cat01.png' %}"#}
+        {#                                                                                   width="90"> MEET OUR CATS <img#}
+        {#                            src="{% static 'images/cat_treats.png' %}" width="90"> MEET OUR CATS <img#}
+        {#                            src="{% static 'images/cat_box.png' %}" width="90"> MEET OUR CATS <img#}
+        {#                            src="{% static 'images/cat_condo.png' %}" width="90"> MEET OUR CATS <img#}
+        {#                            src="{% static 'images/mouse_toy.png' %}" width="90">#}
+        {#                        MEET OUR CATS <img src="{% static 'images/cat04.png' %}" width="90"> MEET OUR CATS <img#}
+        {#                                src="{% static 'images/cat03.png' %}" width="90"> MEET OUR CATS <img#}
+        {#                                src="{% static 'images/bone.png' %}" width="90"> MEET OUR CATS <img#}
+        {#                                src="{% static 'images/bone.png' %}" width="90"> MEET OUR CATS</h1>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </div>#}
+        <!-- Marquee -->
+
+        {#    <div class="section-block bkg-brown pt-0">#}
+        {#    <div class="cat-intro1-container">#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#  <div class="ui-card"></div>#}
+        {#</div>#}
+        {#    </div>#}
+        {#    </div>#}
+        <!-- Cats -->
+        <div class="section-block bkg-tan">
+
+            <div class="column width-12 center">
+
+                <h1 class="mb-50 mt-50 desinem color-brown">MEET OUR CATS<img class="cat-icon" width="40"
+                                                                              src="{% static 'images/cat02.png' %}">
+                </h1>
+            </div>
+        </div>
+        <div class="section-block bkg-tan pt-0">
+            <div class="cat-intro3-container">
+                <div class="form">
+                    <div class="shape">
+                        <img src="{% static 'images/cats/hashbrown.jpg' %}"/>
+                        <div class="content">
+                            <h3 class="mb-50 desinem color-brown">Hashbrown<img class="paw-print"
+                                                                                src="{% static 'images/mouse_toy.png' %}"
+                                                                                alt=""></h3>
+                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
+                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="shape">
+                        <img src="{% static 'images/cats/Cold-Foam.jpg' %}"/>
+                        <div class="content">
+                            <h3 class="mb-50 desinem color-brown">Cold Foam<img class="paw-print"
+                                                                                src="{% static 'images/cat_condo.png' %}"
+                                                                                alt=""></h3>
+                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
+                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="shape">
+                        <img src="{% static 'images/cats/Goudan.jpg' %}"/>
+                        <div class="content">
+                            <h3 class="mb-50 desinem color-brown">Goudan<img class="paw-print"
+                                                                                src="{% static 'images/mouse_toy.png' %}"
+                                                                                alt=""></h3>
+                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
+                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column width-5 offset-1">
-                    <div class="feature-column medium left">
-                        <span class="feature-icon icon-crop icon-circled medium bkg-theme color-white"></span>
-                        <div class="feature-text">
-                            <h6 class="weight-bold text-uppercase">Auto Cropping</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column width-5">
-                    <div class="feature-column medium left">
-                        <span class="feature-icon icon-eye icon-circled medium bkg-theme color-white"></span>
-                        <div class="feature-text">
-                            <h6 class="weight-bold text-uppercase">Red Eye Correction</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="column width-12 center mt-50 mb-50">
+                <a href="{% url 'cats' %}"
+                   class="rounded weight-bold button medium text-uppercase border-brown bkg-brown bkg-hover-tan color-brown color-tan color-hover-brown left mb-20 mb-mobile-50">
+                    CLICK TO SEE MORE CATS
+                </a>
             </div>
-        </section>
-        <!-- Features -->
+        </div>
+    </div>
+
+        <div class="wavy-header bkg-tan">
+            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
+                 xml:space="preserve">
+<path class="wave" style="fill: #695142;" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
+	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
+	z"/>
+</svg>
+        </div>
+        <!-- Cats-intro-2 -->
+        {#        <div class="section-block bkg-yellow pt-0">#}
+        {#            <div class="cat-container mt-0">#}
+        {#                <div class="cat-card">#}
+        {#                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">#}
+        {#                    <div class="cat-card__head">Plotting Cat</div>#}
+        {#                </div>#}
+        {#                <div class="cat-card">#}
+        {#                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg">#}
+        {#                    <div class="cat-card__head">Angry Cat</div>#}
+        {#                </div>#}
+        {#                <div class="cat-card">#}
+        {#                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG">#}
+        {#                    <div class="cat-card__head">Curious Cat</div>#}
+        {#                </div>#}
+        {#                <div class="cat-card">#}
+        {#                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg">#}
+        {#                    <div class="cat-card__head">Prowling Cat</div>#}
+        {#                </div>#}
+        {#                <div class="cat-card">#}
+        {#                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg">#}
+        {#                    <div class="cat-card__head">Sleepy Cat</div>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="frame">#}
+        {#                <button class="custom-btn btn-12"><span>Click!</span><span>More cats?</span></button>#}
+        {#            </div>#}
+        {#        </div>#}
+
 
     </div>
-    <!-- Content End -->
+    <div class="section-block bkg-brown">
 
+        <div class="column width-12 center">
+
+            <h1 class="mb-50 mt-50 desinem color-tan">Book Your Visit<img class="cat-icon" width="40"
+                                                                          src="{% static 'images/cat03.png' %}"></h1>
+        </div>
+    </div>
+    <div class="section-block bkg-brown pb-0">
+
+        <div class="row flex justify-center">
+            <div class="column width-8">
+                <div class="feature-content">
+                    <iframe src="https://app.squarespacescheduling.com/schedule.php?owner=28415377"
+                            title="Schedule Appointment" width="100%" height="800" frameBorder="0"></iframe>
+                    <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+                </div>
+            </div>
+
+
+            <img class="treat-1" src="{% static 'images/treat.png' %}" alt="">
+            <img class="treat-2" src="{% static 'images/treat.png' %}" alt="">
+            <img class="treat-3" src="{% static 'images/treat.png' %}" alt="">
+        </div>
+        <div class="wavy-header bkg-brown">
+            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
+                 xml:space="preserve">
+<path class="wave" style="stroke: none; fill:#d2b18f" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
+	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
+	z"/>
+</svg>
+        </div>
+    </div>
 {% endblock %}
-

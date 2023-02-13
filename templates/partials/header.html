@@ -7,27 +7,27 @@
             <div class="column width-12 nav-bar-inner">
                 <div class="logo">
                     <div class="logo-inner">
-                        <a href="index.html"><img src="{% static 'images/logo/logo-dark.png' %}"
-                                                  alt="Sartre Logo"/></a>
-                        <a href="index.html"><img src="{% static 'images/logo/logo.png' %}" alt="Sartre Logo"/></a>
+                        <a href="{% url 'index' %}"><img src="{% static 'images/logo/petpls_logo_white.png' %}" alt="Petpls Logo"/></a>
+                        <a href="{% url 'index' %}"><img src="{% static 'images/logo/petpls_logo.png' %}"
+                                                  alt="Petpls Logo"/></a>
                     </div>
                 </div>
                 <nav class="navigation nav-block secondary-navigation nav-right">
                     <ul>
-                        {#                                    <li>#}
-                        {#										<div class="v-align-middle">#}
-                        {#											<ul class="social-list list-horizontal">#}
-                        {#												<li><a href="#" class="nav-icon"><span class="icon-twitter small"></span></a></li>#}
-                        {#												<li><a href="#" class="nav-icon"><span class="icon-facebook small"></span></a></li>#}
-                        {#											</ul>#}
-                        {#										</div>#}
-                        {#									</li>#}
-                        <li>
+                        <li class="social-list-header">
                             <div class="v-align-middle">
-                                <a href="#book" class="button scroll-link small pull-right no-margin-bottom">BOOK
-                                    YOUR VISIT</a>
+                                <ul class="social-list list-horizontal">
+                                    <li><a href="#" class="nav-icon"><span class="icon-instagram small"></span></a></li>
+                                    <li><a href="#" class="nav-icon"><span class="icon-facebook small"></span></a></li>
+                                </ul>
                             </div>
                         </li>
+                        <li>
+                            <div class="v-align-middle">
+                                <a href="{% url 'book' %}" class="button scroll-link small pull-right no-margin-bottom border-brown rounded">BOOKING</a>
+                            </div>
+                        </li>
+
                         <li class="aux-navigation hide">
                             <!-- Aux Navigation -->
                             <a href="#" class="navigation-show side-nav-show nav-icon">
@@ -38,25 +38,25 @@
                 </nav>
                 <nav class="navigation nav-block primary-navigation sub-menu-indicator nav-right no-margin-right">
                     <ul>
-                        <li class="current">
-                            <a href="index.html">OUR STORY</a>
+                        <li class="">
+                            <a href="{% url 'index' %}">HOME</a>
                         </li>
                         <li class="contains-sub-menu">
-                            <a href="about-style-one.html">THE CATS</a>
+                            <a href="{% url 'cats' %}">THE CATS</a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="index-mobile-application.html">Currrent Cats</a>
+                                    <a href="{% url 'cats' %}">Currrent Cats</a>
                                 </li>
-                                <li>
-                                    <a href="index-mobile-application.html">Foster a Cat</a>
-                                </li>
-                                <li>
-                                    <a href="index-mobile-application.html">Adoptions</a>
-                                </li>
+{#                                <li>#}
+{#                                    <a href="index-mobile-application.html">Foster a Cat</a>#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a href="index-mobile-application.html">Adoptions</a>#}
+{#                                </li>#}
                             </ul>
                         </li>
                         <li>
-                            <a href="about-style-one.html">CONTACT US</a>
+                            <a href="{% url 'contact' %}">CONTACT US</a>
                         </li>
                     </ul>
                 </nav>
