@@ -18,6 +18,7 @@
                 <div class="feature-content">
                     <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
                         <h1 class="mb-0 title-xlarge desinem font-4rem-mobile">Contact us for more information</h1>
+
                     </div>
                 </div>
             </div>
@@ -66,22 +67,23 @@
                         </div>
 						<div class="column width-8 left">
 							<div class="contact-form-container">
-								<form class="contact-form" action="" method="post" novalidate>
+                                {% csrf_token %}
+								<form id="contact-form" class="contact-form" action="{% url 'send_contact_email' %}" role="form" method="post" enctype="multipart/form-data">
 									<div class="row">
-										<div class="column width-6">
-											<input type="text" name="fname" class="form-fname form-element large" placeholder="First Name*" tabindex="1" required>
+										<div class="column width-6 form-group input-group">
+											<input type="text" name="fname" id="fname" class="form-control form-element large" placeholder="Full Name" tabindex="1" required>
 										</div>
-										<div class="column width-6">
-											<input type="text" name="lname" class="form-lname form-element large" placeholder="Last Name" tabindex="2">
-										</div>
-										<div class="column width-12">
-											<input type="email" name="email" class="form-email form-element large" placeholder="Email address*" tabindex="3" required>
+                                        <div class="column width-6 form-group input-group">
+                                            <input type="text" name="phone" id="phone" class="form-control form-element large" placeholder="Phone Number" tabindex="2" required>
+                                        </div>
+										<div class="column width-12 form-group input-group">
+											<input type="email" name="email" id="email" class="form-control form-element large" placeholder="Email address*" tabindex="3" required>
 										</div>
                                     </div>
 									<div class="row">
-										<div class="column width-12">
+										<div class="column width-12 form-group input-group">
 											<div class="field-wrapper">
-												<textarea name="message" class="form-message form-element large" placeholder="Message*" tabindex="7" required></textarea>
+												<textarea name="msg" id="msg" class="form-control form-element large" placeholder="Message*" tabindex="7" required></textarea>
 											</div>
 										</div>
 {#										<div class="column width-12">#}
@@ -91,11 +93,11 @@
 {#											</div>#}
 {#										</div>#}
 										<div class="column width-12">
-											<input type="submit" value="SEND EMAIL" class="form-submit button medium bkg-brown bkg-hover-tan color-tan color-hover-brown rounded weight-bold">
+											<input id="form-submit" type="submit" value="SEND EMAIL" class="form-submit button medium bkg-brown bkg-hover-tan color-tan color-hover-brown rounded weight-bold">
 										</div>
 									</div>
 								</form>
-								<div class="form-response center"></div>
+								<div class="form-response center" id="form-response"></div>
 							</div>
 						</div>
 					</div>

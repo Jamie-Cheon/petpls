@@ -1,16 +1,17 @@
 {% load static %}
+{% load my_tag %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
-	<meta name="twitter:widgets:theme" content="light">
-	<meta property="og:title" content="Your-Title-Here" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="Your-Image-Url" />
-	<meta property="og:description" content="Your-Page-Description" />
-	<title>Sartre | Multipurpose HTML5 Template - Mobile Application</title>
+    <title>{% block page_name %}{% endblock page_name %}| PETPLS</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+    <meta name="description" content="We serve great beverages and some pastries. We are open to customers above 4 years old and we do appreciate your interests! To make sure all the cats are in healthy and energetic conditions, our cat room visit starts at 1 pm"/>
+    <meta name="keywords" content="cat cafe, cat, cats, cafe, pet, cat adoption, foster cats, pet adoption, foster pets, cute cat, grooming, pet supply, coffee, bread">
 
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <!-- Favicon Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
@@ -26,6 +27,7 @@
 	<!-- Css -->
 	<link rel="stylesheet" href="{% static 'css/core.min.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/skin-mobile-application.css' %}" />
+    <link rel="stylesheet" href="{% static 'plugins/form-validation/css/formValidation.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
     {% block css %}
     {% endblock %}
@@ -50,25 +52,28 @@
             </div>
             <nav class="side-navigation">
                 <ul>
-                    <li class="current">
+                    <li class="{% current 'index' %}">
                         <a href="{% url 'index' %}">HOME</a>
                     </li>
-                    <li>
+                    <li class="{% current 'cats' %}">
                         <a href="{% url 'cats' %}" class="contains-sub-menu">THE CATS</a>
                         <ul class="sub-menu">
-                            <li>
+                            <li class="{% current 'cats' %}">
                                 <a href="{% url 'cats' %}">Current Cats</a>
                             </li>
-                            <li>
-                                <a href="index-mobile-application.html">Foster a Cat</a>
-                            </li>
-                            <li>
-                                <a href="index-mobile-application.html">Adoptions</a>
-                            </li>
+{#                            <li>#}
+{#                                <a href="index-mobile-application.html">Foster a Cat</a>#}
+{#                            </li>#}
+{#                            <li>#}
+{#                                <a href="index-mobile-application.html">Adoptions</a>#}
+{#                            </li>#}
                         </ul>
                     </li>
-                    <li>
+                    <li class="{% current 'contact' %}">
                         <a href="{% url 'contact' %}">CONTACT US</a>
+                    </li>
+                    <li class="{% current 'booking' %}">
+                        <a href="{% url 'booking' %}">BOOKING</a>
                     </li>
                 </ul>
             </nav>
@@ -98,8 +103,11 @@
 
 	<!-- Js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
+{#	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>#}
 	<script src="{% static 'js/timber.master.min.js' %}"></script>
+    <script defer src="{% static 'plugins/form-validation/js/formValidation.min.js' %}"></script>
+    <script defer src="{% static 'plugins/form-validation/js/framework/bootstrap.min.js' %}"></script>
+    <script defer src="{% static 'js/contact-form.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
 {% block js %}
 {% endblock %}

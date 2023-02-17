@@ -78,6 +78,10 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+                'my_tag': 'tag.templatetags.my_tag',
+
+            }
         },
     },
 ]
@@ -147,14 +151,14 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# with open(os.path.join(BASE_DIR, '.config_secret', 'secret_common.json')) as f:
-#     config_secret_common_str = f.read()
-#
-# config_secret = json.loads(config_secret_common_str)
-#
-# # SES
-# SES_REGION = config_secret['SES']['region']
-# SES_KEY_ID = config_secret['SES']['key']
-# SES_SECRET_KEY = config_secret['SES']['secret']
-#
-#
+with open(os.path.join(BASE_DIR, '.config_secret', 'secret_common.json')) as f:
+    config_secret_common_str = f.read()
+
+config_secret = json.loads(config_secret_common_str)
+
+# SES
+SES_REGION = config_secret['SES']['region']
+SES_KEY_ID = config_secret['SES']['key']
+SES_SECRET_KEY = config_secret['SES']['secret']
+
+

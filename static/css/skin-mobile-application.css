@@ -318,7 +318,7 @@ body,
 .section-block:not([class*="bkg-"]),
 .fullscreen-sections-wrapper{
 	/*background-color: #fff;*/
-    background-color: #d2b18f;
+    background-color: #695142;
 }
 
 /* greyscale */
@@ -528,6 +528,8 @@ body,
 .header .header-inner .dropdown > .nav-icon{
 	height: 8rem;
 	line-height: 8rem;
+	font-weight: 500;
+    letter-spacing: 0.3px;
 }
 
 /* Compacted Height */
@@ -810,7 +812,7 @@ body,
 .navigation .sub-menu.custom-content,
 .navigation .mega-sub-menu,
 .navigation .dropdown-list{
-	background-color: #111;
+	background-color: #695142;
 }
 
 /* Menu Nav Cart Intial Colors */
@@ -851,14 +853,14 @@ body,
 .navigation .sub-menu:not(.custom-content) li:hover > a,
 .navigation .mega-sub-menu:not(.custom-content) ul li:hover > a,
 .navigation .dropdown-list:not(.custom-content) li:hover a{
-	background-color: #000;
+	background-color: bisque;
 }
 .navigation .sub-menu li > a:not(.button):hover,
 .navigation .mega-sub-menu ul li > a:not(.button):hover,
 .navigation .dropdown-list li > a:not(.button):hover,
 .navigation .cart-overview .product-title:hover,
 .navigation .cart-overview .product-remove:hover{
-	color: #fff;
+	color: #695142;
 }
 .navigation .sub-menu li.current > a:not(.button),
 .navigation .dropdown-list li.current > a:not(.button),
@@ -1290,11 +1292,11 @@ background-color: transparent;
 /* Side Nav Footer */
 .side-navigation-footer,
 .side-navigation-footer .social-list a{
-	color: #666;
+	color: #695142;
 	font-size: 1.1rem;
 }
 .side-navigation-footer .social-list a:hover{
-	color: #fff;
+	color: #d2b18f;
 }
 .side-navigation-footer .copyright{
 	font-size: 1.1rem;

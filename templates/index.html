@@ -8,29 +8,71 @@
     <!-- Content -->
     <div class="content clearfix">
 
-        <!-- Hero section -->
-        <section class="section-block feature-3 bkg-tan">
-            <div class="row flex">
-                <div class="column width-5">
-                    <div class="feature-content">
-                        <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
-                            <p class="color-brown weight-bold mb-0">PETPLS Café and Supply</p>
-                            <h1 class="color-brown mb-0 title-xlarge font-4rem-mobile desinem">Where the Cool Cats HangOut</h1>
-                            <p class="color-brown">With Sartre Pixls you get a full library of photo tools optimized for
-                                touch devices. Simple, powerful and intuitive.</p>
-                            <a href="{% url 'book' %}"
-                               class="rounded weight-bold button medium text-uppercase border-brown bkg-hover-brown color-brown color-hover-tan left mb-20 mb-mobile-50">
-                                BOOK YOUR VISIT
-                            </a>
+            <!-- Hero section -->
+            <section class="section-block feature-3 bkg-tan">
+                {#                                <img class="mouse auto-tee" width="100" height="100" src="{% static 'images/yarn_ball.png' %}" alt=""/>#}
+                <div class="row flex justify-center">
+                    <div class="column width-8 center">
+                        <div class="feature-content">
+                            <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
+                                <h1 class="color-brown mb-0 title-xlarge desinem clip-text" style="background-image: url({% static 'images/cat-bg.jpg' %})">WHERE THE COOL CATS HANGOUT</h1>
+{#                                <a href="#booking"#}
+{#                                   class="rounded weight-bold button medium text-uppercase bkg-brown border-brown bkg-hover-trans color-tan color-hover-brown left mb-20 mb-mobile-50">#}
+{#                                    BOOK YOUR VISIT#}
+{#                                </a>#}
+                                <p class="color-brown mb-0 font-1rem weight-bold opacity-07">PETPLS CAFE AND SUPPLY</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="circle"></div>
                 </div>
-                <div class="column width-7 center">
-                    <div class="feature-image">
-                        <div class="feature-image-inner pt-20 no-padding-on-mobile">
-                            <img src="{% static 'images/cat04.png' %}" alt=""/>
-                        </div>
-                    </div>
+                {#            <img class="treat-4" src="{% static 'images/cat03.png' %}" alt="">#}
+                {#            <img class="treat-2" src="{% static 'images/cat03.png' %}" alt="">#}
+                {#            <img class="treat-3" src="{% static 'images/cat03.png' %}" alt="">#}
+
+            </section>
+            <a href="#booking">
+                <div class="hero-cat badge">
+                <img class="hero-cat-img" src="{% static 'images/cat-3.png' %}">
+                <div class="text">
+                    <div>BOOK</div>
+                </div>
+            </div>
+            </a>
+            <!-- Hero section -->
+{#        <div class='badge'>#}
+{#  <div class='text'>’Hallo!</div>#}
+{#</div>#}
+
+
+            <div class="wave-bottom bkg-white pb-20p">
+                <svg class="svg2" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                    <path d="M0,10 C150,80 250,0 500,10 L500,00 L0,0 z" style="stroke: none; fill:#d2b18f;"></path>
+                </svg>
+            </div>
+        <!-- Hero section -->
+{#        <section class="section-block feature-3 bkg-tan">#}
+{#            <div class="row flex">#}
+{#                <div class="column width-5">#}
+{#                    <div class="feature-content">#}
+{#                        <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">#}
+{#                            <p class="color-brown weight-bold mb-0">PETPLS Café and Supply</p>#}
+{#                            <h1 class="color-brown mb-0 title-xlarge font-4rem-mobile desinem">Where the Cool Cats HangOut</h1>#}
+{#                            <p class="color-brown">With Sartre Pixls you get a full library of photo tools optimized for#}
+{#                                touch devices. Simple, powerful and intuitive.</p>#}
+{#                            <a href="#booking"#}
+{#                               class="rounded weight-bold button medium text-uppercase bkg-brown border-brown bkg-hover-tan color-tan color-hover-brown left mb-20 mb-mobile-50">#}
+{#                                BOOK YOUR VISIT#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="column width-7 center">#}
+{#                    <div class="feature-image">#}
+{#                        <div class="feature-image-inner pt-20 no-padding-on-mobile">#}
+{#                            <img src="{% static 'images/cat04.png' %}" alt=""/>#}
+{#                        </div>#}
+{#                    </div>#}
                     {#                    <img src="{% static 'images/paw_print.png' %}" alt=""/>#}
                     {#                    <canvas class="no-margins" id="canvas"></canvas>#}
                     {#                    <div class="feature-image balloon">#}
@@ -45,28 +87,28 @@
                     {#                    </div>#}
                     {#                    <div class="circle"></div>#}
                     {#                            <div class="balloon" style="background-image: url({% static 'images/sheep-balloon.png' %})"></div>#}
-                </div>
+{#                </div>#}
                 {#                <img class="treat-4" src="{% static 'images/treat.png' %}" alt="">#}
                 {#                <img class="treat-5" src="{% static 'images/treat.png' %}" alt="">#}
                 {#                <img class="treat-6" src="{% static 'images/treat.png' %}" alt="">#}
-            </div>
-        </section>
+{#            </div>#}
+{#        </section>#}
         <!-- Hero section -->
 
-        <div class="wavy-header bkg-tan">
-            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
-                 xml:space="preserve">
-<path class="wave" style="stroke: none; fill:#695142" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
-	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
-	z"/>
-</svg>
-        </div>
+{#        <div class="wavy-header bkg-tan">#}
+{#            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"#}
+{#                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"#}
+{#                 xml:space="preserve">#}
+{#<path class="wave" style="stroke: none; fill:#695142" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72#}
+{#	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43#}
+{#	z"/>#}
+{#</svg>#}
+{#        </div>#}
         <!-- About us -->
-        <div class="section-block replicable-content bkg-brown">
+        <div class="section-block replicable-content bkg-white">
             <div class="row">
                 <div class="column width-12">
-                    <h3 class="mb-50 desinem color-tan">Our Story <img class="paw-print"
+                    <h3 class="mb-50 desinem color-brown">Our Story <img class="paw-print"
                                                                        src="{% static 'images/paw_print.png' %}" alt="">
                     </h3>
                     <div class="row">
@@ -74,7 +116,7 @@
                             <div class="row">
                                 <div class="column width-6">
                                     <div class="row">
-                                        <div class="column width-11 offset-1 color-tan">
+                                        <div class="column width-11 offset-1 color-brown">
                                             <p class="mb-20">Sed ut perspiciatis unde omnis iste natus error sit
                                                 voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
                                                 ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -85,7 +127,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column width-6 color-tan">
+                                <div class="column width-6 color-brown">
                                     <p class="mb-20">Voluptatem accusantium doloremque laudantium, totam rem aperiam,
                                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
                                         dicta sunt explicabo.</p>
@@ -96,9 +138,9 @@
                 </div>
                 {#                <img class="right paw-print" src="{% static 'images/paw_print.png' %}" alt="">#}
                 {#                <img class="paw-print" src="{% static 'images/paw_print.png' %}" alt="">#}
-                <img class="treat-1" src="{% static 'images/treat.png' %}" alt="">
-                <img class="treat-2" src="{% static 'images/treat.png' %}" alt="">
-                <img class="treat-3" src="{% static 'images/treat.png' %}" alt="">
+                <img class="treat-1" src="{% static 'images/cat-toy.png' %}" alt="">
+{#                <img class="treat-2" src="{% static 'images/cat-toe.png' %}" alt="">#}
+                <img class="treat-3" src="{% static 'images/cat-toe.png' %}" alt="">
             </div>
         </div>
         <!-- Content End -->
@@ -107,11 +149,11 @@
         {#    <path d="M0,10 C150,80 250,0 500,10 L500,00 L0,0 z" style="stroke: none; fill:#695142 ;"></path>#}
         {#  </svg>#}
         {#</div>#}
-        <div class="wavy-header bkg-brown">
+        <div class="wavy-header bkg-white">
             <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
                  xml:space="preserve">
-<path class="wave" style="stroke: none; fill:#d2b18f" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
+<path class="wave" style="stroke: none; fill:#f9f5f0" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
 	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
 	z"/>
 </svg>
@@ -150,72 +192,173 @@
         {#    </div>#}
         {#    </div>#}
         <!-- Cats -->
-        <div class="section-block bkg-tan">
+        <section id="features">
+            <div class="section-block bkg-light-tan">
 
-            <div class="column width-12 center">
+                <div class="column width-12 center">
 
-                <h1 class="mb-50 mt-50 desinem color-brown">MEET OUR CATS<img class="cat-icon" width="40"
-                                                                              src="{% static 'images/cat02.png' %}">
-                </h1>
+                    <h1 class="mt-50 desinem color-brown">MEET OUR CATS<img class="cat-icon" width="40"
+                                                                                  src="{% static 'images/cat02.png' %}">
+                    </h1>
+                </div>
             </div>
-        </div>
-        <div class="section-block bkg-tan pt-0">
-            <div class="cat-intro3-container">
-                <div class="form">
-                    <div class="shape">
-                        <img src="{% static 'images/cats/hashbrown.jpg' %}"/>
-                        <div class="content">
-                            <h3 class="mb-50 desinem color-brown">Hashbrown<img class="paw-print"
-                                                                                src="{% static 'images/mouse_toy.png' %}"
-                                                                                alt=""></h3>
-                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
-                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
+
+            <!-- Hashbrown -->
+            <div class="section-block feature-3 bkg-light-tan color-brown cat-intro">
+                {#                                    <img class="treat-1" src="{% static 'images/treat.png' %}" alt="">#}
+                {#                                    <img class="treat-2" src="{% static 'images/treat.png' %}" alt="">#}
+                {#                                    <img class="treat-3" src="{% static 'images/treat.png' %}" alt="">#}
+                <div class="row flex">
+                    <div class="column width-5 offset-1">
+                        <div class="feature-content z-plus">
+                            <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
+                                <h1 class="mb-20 font-3rem font-2rem-mobile horizon desinem" data-parallax="direction:vertical;speed:0.3;rotate:none;">HASHBROWN</h1>
+                                <h4 class="mb-20 horizon font-alt-1 weight-bold color-tan" data-parallax="direction:vertical;speed:0.1;rotate:none;">Boy</h4>
+                                {#										<p class="lead">He is one of the most curious boys, he likes to be petted all the time. He makes friends easily but his best friend is always bubu. A big fan of toys.</p>#}
+                                <p>He is one of the most curious boys, he likes to be petted all the time. He makes friends easily but his best friend is always bubu. A big fan of toys.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form">
-                    <div class="shape">
-                        <img src="{% static 'images/cats/Cold-Foam.jpg' %}"/>
-                        <div class="content">
-                            <h3 class="mb-50 desinem color-brown">Cold Foam<img class="paw-print"
-                                                                                src="{% static 'images/cat_condo.png' %}"
-                                                                                alt=""></h3>
-                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
-                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
-                        </div>
-                    </div>
-                </div>
-                <div class="form">
-                    <div class="shape">
-                        <img src="{% static 'images/cats/Goudan.jpg' %}"/>
-                        <div class="content">
-                            <h3 class="mb-50 desinem color-brown">Goudan<img class="paw-print"
-                                                                                src="{% static 'images/mouse_toy.png' %}"
-                                                                                alt=""></h3>
-                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
-                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
+                    <div class="column width-5 center">
+                        <div class="feature-image text-center">
+{#                            <div class="feature-image-inner pt-20 no-padding-on-mobile horizon pd-40" data-parallax="direction:vertical;speed:0.3;rotate:anticlockwise;opacity:fade;">#}
+{#                                <img class="border-rounded cat-img" src="{% static 'images/cats/hashbrown.jpg' %}" width="400" alt=""/>#}
+{#                            </div>#}
+                            <a href="{% url 'cats' %}">
+                            <div class="cat-badge feature-image-inner" data-parallax="direction:vertical;speed:0.3;rotate:anticlockwise;opacity:fade;" style="background-image: url({% static 'images/cats/hashbrown.jpg' %})">
+{#                                                                <img class="border-rounded cat-img z-minus" src="{% static 'images/cats/hashbrown.jpg' %}" width="400" alt=""/>#}
+                                <div class="cat-badge"></div>>
+  <div class="cat-text">MORE CATS?</div>
+</div>
+
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column width-12 center mt-50 mb-50">
-                <a href="{% url 'cats' %}"
-                   class="rounded weight-bold button medium text-uppercase border-brown bkg-brown bkg-hover-tan color-brown color-tan color-hover-brown left mb-20 mb-mobile-50">
-                    CLICK TO SEE MORE CATS
-                </a>
-            </div>
-        </div>
-    </div>
+            <!-- Feature Section 3 -->
 
-        <div class="wavy-header bkg-tan">
-            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
-                 xml:space="preserve">
-<path class="wave" style="fill: #695142;" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
-	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
-	z"/>
-</svg>
+            <!-- Cold Foam -->
+            <div class="section-block feature-3 bkg-light-tan overflow-visible color-brown">
+                <div class="row flex">
+                    <div class="column width-5 push-6">
+                        <div class="feature-content">
+                            <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
+                                <h1 class="mb-20 font-3rem horizon desinem" data-parallax="direction:vertical;speed:0.3;rotate:none;">COLD FOAM</h1>
+                                <h4 class="mb-20 horizon font-alt-1 weight-bold color-tan" data-parallax="direction:vertical;speed:0.1;rotate:none;">Girl</h4>
+                                <p>Bubu’s fiancée. A bit shy and skittish, her favorite toy is the laser pointer. Don’t be surprised if she block the door of safety zone when other cats are trying to get out.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-5 pull-6 offset-2 center">
+                        <div class="feature-image text-center">
+                            <a href="{% url 'cats' %}">
+                            <div class="cat-badge feature-image-inner" data-parallax="direction:vertical;speed:0.3;rotate:anticlockwise;opacity:fade;" style="background-image: url({% static 'images/cats/Cold-Foam.jpg' %})">
+                                {#                                                                <img class="border-rounded cat-img z-minus" src="{% static 'images/cats/hashbrown.jpg' %}" width="400" alt=""/>#}
+                                <div class="cat-badge"></div>>
+                                <div class="cat-text">MORE CATS?</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature Section 3 -->
+
+            <!-- Tang-Yuan -->
+            <div class="section-block feature-3 bkg-light-tan color-brown">
+                <div class="row flex">
+                    <div class="column width-5 offset-1">
+                        <div class="feature-content z-plus">
+                            <div class="feature-content-inner center-on-mobile pt-40 pt-mobile-80">
+                                <h1 class="mb-20 font-3rem horizon desinem" data-parallax="direction:vertical;speed:0.3;rotate:none;">TANG YUAN</h1>
+                                <h4 class="mb-20 horizon font-alt-1 weight-bold color-tan" data-parallax="direction:vertical;speed:0.1;rotate:none;">Boy</h4>
+                                <p>Goudan’s second son. They look almost the same but he has darker gloves and is a bit fatter than Goudan . He likes to squeeze himself into a very tight place.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-5 center">
+                        <div class="feature-image text-center">
+                            <a href="{% url 'cats' %}">
+                            <div class="cat-badge feature-image-inner" data-parallax="direction:vertical;speed:0.3;rotate:anticlockwise;opacity:fade;" style="background-image: url({% static 'images/cats/Tang-yuan.jpg' %})">
+                                {#                                                                <img class="border-rounded cat-img z-minus" src="{% static 'images/cats/hashbrown.jpg' %}" width="400" alt=""/>#}
+                                <div class="cat-badge"></div>>
+                                <div class="cat-text">MORE CATS?</div>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="column width-12 center bkg-light-tan">
+                            <a href="{% url 'cats' %}"
+                               class="rounded weight-bold button medium text-uppercase border-brown bkg-brown bkg-hover-trans color-tan color-hover-brown left mb-20 mb-mobile-50">
+                                CLICK TO SEE MORE CATS
+                            </a>
+                        </div>
+        </section>
+        <div class="wave-bottom bkg-tan">
+            <svg class="svg2" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <path d="M0,10 C150,80 250,0 500,10 L500,00 L0,0 z" style="stroke: none; fill:#f9f5f0;"></path>
+            </svg>
         </div>
+            <!-- Feature Section 3 -->
+{#        <div class="section-block bkg-tan">#}
+{##}
+{#            <div class="column width-12 center">#}
+{##}
+{#                <h1 class="mb-50 mt-50 desinem color-brown">MEET OUR CATS<img class="cat-icon" width="40"#}
+{#                                                                              src="{% static 'images/cat02.png' %}">#}
+{#                </h1>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="section-block bkg-tan pt-0">#}
+{#            <div class="cat-intro3-container">#}
+{#                <div class="form">#}
+{#                    <div class="shape">#}
+{#                        <img src="{% static 'images/cats/hashbrown.jpg' %}"/>#}
+{#                        <div class="content">#}
+{#                            <h3 class="mb-50 desinem color-brown">Hashbrown<img class="paw-print"#}
+{#                                                                                src="{% static 'images/mouse_toy.png' %}"#}
+{#                                                                                alt=""></h3>#}
+                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
+                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="form">#}
+{#                    <div class="shape">#}
+{#                        <img src="{% static 'images/cats/Cold-Foam.jpg' %}"/>#}
+{#                        <div class="content">#}
+{#                            <h3 class="mb-50 desinem color-brown">Cold Foam<img class="paw-print"#}
+{#                                                                                src="{% static 'images/cat_condo.png' %}"#}
+{#                                                                                alt=""></h3>#}
+                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
+                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="form">#}
+{#                    <div class="shape">#}
+{#                        <img src="{% static 'images/cats/Goudan.jpg' %}"/>#}
+{#                        <div class="content">#}
+{#                            <h3 class="mb-50 desinem color-brown">Goudan<img class="paw-print"#}
+{#                                                                                src="{% static 'images/mouse_toy.png' %}"#}
+{#                                                                                alt=""></h3>#}
+                            {#        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
+                            {#          Ad, deleniti dicta dolorem excepturi hic illo itaque omnis rerum. </p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="column width-12 center mt-50 mb-50">#}
+{#                <a href="{% url 'cats' %}"#}
+{#                   class="rounded weight-bold button medium text-uppercase border-brown bkg-brown bkg-hover-tan color-brown color-tan color-hover-brown left mb-20 mb-mobile-50">#}
+{#                    CLICK TO SEE MORE CATS#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{##}
         <!-- Cats-intro-2 -->
         {#        <div class="section-block bkg-yellow pt-0">#}
         {#            <div class="cat-container mt-0">#}
@@ -247,17 +390,16 @@
 
 
     </div>
-    <div class="section-block bkg-brown">
+    <div class="section-block bkg-tan" id="booking">
 
         <div class="column width-12 center">
 
-            <h1 class="mb-50 mt-50 desinem color-tan">Book Your Visit<img class="cat-icon" width="40"
-                                                                          src="{% static 'images/cat03.png' %}"></h1>
+            <h1 class="mb-50 mt-50 desinem color-brown">Book Your Visit</h1>
         </div>
     </div>
-    <div class="section-block bkg-brown pb-0">
+    <div class="section-block bkg-tan pb-0">
 
-        <div class="row flex justify-center">
+        <div class="row flex justify-center pb-50">
             <div class="column width-8">
                 <div class="feature-content">
                     <iframe src="https://app.squarespacescheduling.com/schedule.php?owner=28415377"
@@ -271,14 +413,10 @@
             <img class="treat-2" src="{% static 'images/treat.png' %}" alt="">
             <img class="treat-3" src="{% static 'images/treat.png' %}" alt="">
         </div>
-        <div class="wavy-header bkg-brown">
-            <svg version="1.1" id="curved-border" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1600 116.19"
-                 xml:space="preserve">
-<path class="wave" style="stroke: none; fill:#d2b18f" d="M0.1,119.43V67.45c0,0,99.87,71.51,322.45,8.12c5.56-1.66,92.01-26.52,125.74-35.72
-	c77.28-21.08,219.28-41.4,311.28-38.34c233,7.77,323.98,82.1,469.23,96.61c149.64,14.94,288.45-12.46,371.26-36.99v55.34L0.1,119.43
-	z"/>
-</svg>
+        <div class="wave-bottom bkg-brown">
+            <svg class="svg2" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <path d="M0,10 C150,80 250,0 500,10 L500,00 L0,0 z" style="stroke: none; fill:#d2b18f;"></path>
+            </svg>
         </div>
     </div>
 {% endblock %}

@@ -1,8 +1,12 @@
+{% load my_tag %}
 {% load static %}
 <!-- Header -->
 <header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="window-height"
         data-compact-threshold="window-height">
     <div class="header-inner">
+        <div class="progress_wrapper">
+            <div class="progress_bar"></div>
+        </div>
         <div class="row nav-bar">
             <div class="column width-12 nav-bar-inner">
                 <div class="logo">
@@ -22,11 +26,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <div class="v-align-middle">
-                                <a href="{% url 'book' %}" class="button scroll-link small pull-right no-margin-bottom border-brown rounded">BOOKING</a>
-                            </div>
-                        </li>
+{#                        <li>#}
+{#                            <div class="v-align-middle">#}
+{#                                <a href="{% url 'book' %}" class="button scroll-link small pull-right no-margin-bottom border-brown rounded">BOOKING</a>#}
+{#                            </div>#}
+{#                        </li>#}
 
                         <li class="aux-navigation hide">
                             <!-- Aux Navigation -->
@@ -38,13 +42,13 @@
                 </nav>
                 <nav class="navigation nav-block primary-navigation sub-menu-indicator nav-right no-margin-right">
                     <ul>
-                        <li class="">
+                        <li class="{% current 'index' %}">
                             <a href="{% url 'index' %}">HOME</a>
                         </li>
-                        <li class="contains-sub-menu">
+                        <li class="contains-sub-menu {% current 'cats' %}">
                             <a href="{% url 'cats' %}">THE CATS</a>
                             <ul class="sub-menu">
-                                <li>
+                                <li class="{% current 'cats' %}">
                                     <a href="{% url 'cats' %}">Currrent Cats</a>
                                 </li>
 {#                                <li>#}
@@ -55,8 +59,11 @@
 {#                                </li>#}
                             </ul>
                         </li>
-                        <li>
+                        <li class="{% current 'contact' %}">
                             <a href="{% url 'contact' %}">CONTACT US</a>
+                        </li>
+                        <li class="{% current 'booking' %}">
+                            <a href="{% url 'booking' %}">BOOKING</a>
                         </li>
                     </ul>
                 </nav>
