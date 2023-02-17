@@ -1978,7 +1978,9 @@ background-color: transparent;
 
 /* Form Response */
 .contact-form-container .form-response{
-	color: #666;
+	color: lightseagreen;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 /* Map */
