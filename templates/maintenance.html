@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_name %}
+    HOME
+{% endblock page_name %}
+
+{% block content %}
+<section class="fullscreen-sections-wrapper no-navigation bkg-brown">
+					<div class="section-block fullscreen-section background-cover bkg-brown">
+						<!-- Fullscreen Image -->
+						<div class="background-image-wrapper">
+							<div class="background-image" style="background-image: url({% static 'images/maintenance.jpg' %})"></div>
+						</div>
+						<div class="fullscreen-inner">
+							<div class="row">
+								<div class="column width-8 offset-2 pt-50 center offset-1">
+									<h1 class="mb-30 no-padding-on-mobile color-white desinem">Coming Soon</h1>
+								</div>
+								<div class="column width-6 offset-3 center tmh-perspective">
+									<p class="lead mb-20 color-white">Hi there! We're working hard on making our website even better than before. We'll be back very soon. Promise!</p>
+									<div class="separator bkg-white"></div>
+									<h6 class="color-white weight-bold text-uppercase">Current Progress</h6>
+									<div class="stat maintenance-stat" style="backface-visibility: hidden; transition: -webkit-transform 1000ms cubic-bezier(0.42, 0, 0.58, 1) 0s, opacity; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1); opacity: 1; visibility: visible; transform-origin: 50% 50% 0px;">
+										<div class="stat-inner color-white">
+											<p class="counter"><span class="stat-counter" data-count-from="50" data-count-to="98">98</span>%</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+{% endblock %}

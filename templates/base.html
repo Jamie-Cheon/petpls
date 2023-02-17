@@ -40,59 +40,53 @@
 <body class="shop home-page">
 
 <!-- Side Navigation Menu -->
-<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="push-in">
-    <div class="side-navigation-scroll-pane">
-        <div class="side-navigation-inner">
-            <div class="side-navigation-header">
-                <div class="navigation-hide side-nav-hide">
-                    <a href="#">
-                        <span class="icon-cancel medium"></span>
-                    </a>
-                </div>
-            </div>
-            <nav class="side-navigation">
-                <ul>
-                    <li class="{% current 'index' %}">
-                        <a href="{% url 'index' %}">HOME</a>
-                    </li>
-                    <li class="{% current 'cats' %}">
-                        <a href="{% url 'cats' %}" class="contains-sub-menu">THE CATS</a>
-                        <ul class="sub-menu">
-                            <li class="{% current 'cats' %}">
-                                <a href="{% url 'cats' %}">Current Cats</a>
-                            </li>
-{#                            <li>#}
-{#                                <a href="index-mobile-application.html">Foster a Cat</a>#}
+{#<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="push-in">#}
+{#    <div class="side-navigation-scroll-pane">#}
+{#        <div class="side-navigation-inner">#}
+{#            <div class="side-navigation-header">#}
+{#                <div class="navigation-hide side-nav-hide">#}
+{#                    <a href="#">#}
+{#                        <span class="icon-cancel medium"></span>#}
+{#                    </a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <nav class="side-navigation">#}
+{#                <ul>#}
+{#                    <li class="{% current 'index' %}">#}
+{#                        <a href="{% url 'index' %}">HOME</a>#}
+{#                    </li>#}
+{#                    <li class="{% current 'cats' %}">#}
+{#                        <a href="{% url 'cats' %}" class="contains-sub-menu">THE CATS</a>#}
+{#                        <ul class="sub-menu">#}
+{#                            <li class="{% current 'cats' %}">#}
+{#                                <a href="{% url 'cats' %}">Current Cats</a>#}
 {#                            </li>#}
-{#                            <li>#}
-{#                                <a href="index-mobile-application.html">Adoptions</a>#}
-{#                            </li>#}
-                        </ul>
-                    </li>
-                    <li class="{% current 'contact' %}">
-                        <a href="{% url 'contact' %}">CONTACT US</a>
-                    </li>
-                    <li class="{% current 'booking' %}">
-                        <a href="{% url 'booking' %}">BOOKING</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="side-navigation-footer">
-                <ul class="social-list list-horizontal">
-                    <li><a href="#"><span class="icon-instagram small"></span></a></li>
-                    <li><a href="#"><span class="icon-facebook small"></span></a></li>
-                </ul>
-                <p class="copyright no-margin-bottom">&copy; 2023 PETPLS.</p>
-            </div>
-        </div>
-    </div>
-</aside>
+{#                        </ul>#}
+{#                    </li>#}
+{#                    <li class="{% current 'contact' %}">#}
+{#                        <a href="{% url 'contact' %}">CONTACT US</a>#}
+{#                    </li>#}
+{#                    <li class="{% current 'booking' %}">#}
+{#                        <a href="{% url 'booking' %}">BOOKING</a>#}
+{#                    </li>#}
+{#                </ul>#}
+{#            </nav>#}
+{#            <div class="side-navigation-footer">#}
+{#                <ul class="social-list list-horizontal">#}
+{#                    <li><a href="#"><span class="icon-instagram small"></span></a></li>#}
+{#                    <li><a href="#"><span class="icon-facebook small"></span></a></li>#}
+{#                </ul>#}
+{#                <p class="copyright no-margin-bottom">&copy; 2023 PETPLS.</p>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</aside>#}
 <!-- Side Navigation Menu End -->
 
 <div class="wrapper reveal-side-navigation">
     <div class="wrapper-inner">
 
-        {% include 'partials/header.html' %}
+{#        {% include 'partials/header.html' %}#}
 
         {% block content %}
         {% endblock %}

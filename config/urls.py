@@ -19,10 +19,11 @@ from django.views.generic import TemplateView
 from config import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name="index.html"), name="index"),
-    path('cats/', TemplateView.as_view(template_name="cats.html"), name="cats"),
-    path('booking/', TemplateView.as_view(template_name="booking.html"), name="booking"),
-    path('contact-us/', TemplateView.as_view(template_name="contact.html"), name="contact"),
-    path('contact/', views.send_contact_email, name='send_contact_email'),
+    path('', TemplateView.as_view(template_name="maintenance.html")),
+    # path('admin/', admin.site.urls),
+    # path('', TemplateView.as_view(template_name="index.html"), name="index"),
+    # path('cats/', TemplateView.as_view(template_name="cats.html"), name="cats"),
+    # path('booking/', TemplateView.as_view(template_name="booking.html"), name="booking"),
+    # path('contact-us/', TemplateView.as_view(template_name="contact.html"), name="contact"),
+    # path('contact/', views.send_contact_email, name='send_contact_email'),
 ]
