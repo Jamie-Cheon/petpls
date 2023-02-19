@@ -11,6 +11,6 @@ def send_contact_email(request):
     phone = request.POST.get('phone')
     email = request.POST.get('email')
     message = request.POST.get('msg')
-    send_email_as_html('info@petpls.com', 'Contact Us', 'email/contact_email.html',
+    send_email_as_html('info@petpls.ca', 'Contact Us', 'email/contact_email.html',
                        {'fname': fname, 'phone': phone, 'email': email, 'message': message})
     return JsonResponse(data={})
