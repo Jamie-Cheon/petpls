@@ -1,12 +1,12 @@
-    {% extends "base.html" %}
-    {% load static %}
-    {% block page_name %}
-        Contact Us
-    {% endblock page_name %}
+{% extends "base.html" %}
+{% load static %}
+{% block page_name %}
+    Contact Us
+{% endblock page_name %}
 
-    {% block css %}
-{#        <link href="{% static 'js/plugins/form-validation/css/formValidation.min.css' %}" rel="stylesheet" type="text/css"/>#}
-    {% endblock %}
+{% block css %}
+    {#        <link href="{% static 'js/plugins/form-validation/css/formValidation.min.css' %}" rel="stylesheet" type="text/css"/>#}
+{% endblock %}
 
 {% block content %}
 
@@ -31,106 +31,142 @@
     </section>
     <!-- Hero section -->
 
-{#    <div class="wave-bottom bkg-white pb-50">#}
-{#        <svg class="svg2" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">#}
-{#            <path d="M0,10 C150,80 250,0 500,10 L500,00 L0,0 z" style="stroke: none; fill:#d2b18f;"></path>#}
-{#        </svg>#}
-{#    </div>#}
-{##}
-				<!-- Contact Form -->
-				<section class="section-block replicable-content contact-2 bkg-white">
-					<div class="row">
-						<div class="column width-4">
-{#							<h2 class="mb-30 desinem">Contact Us</h2>#}
-							<div class="row">
-{#								<div class="column width-10">#}
-{#									<p>Shoot us an email! We'll get back to you within 24hrs.</p>#}
-{#								</div>#}
-                                <div class="column width-10">
-                                    <h5 class="weight-bold text-uppercase desinem">Give us a ring</h5>
-                                    <p>+(1) 236-234-4488</p>
-                                </div>
-                                <div class="column width-10">
-                                    <h5 class="weight-bold text-uppercase desinem">Email Us 24/7</h5>
-                                    <p>
-                                                        <a href="mailto:info@petpls.ca">info@petpls.ca</a>
-                                    </p>
-                                </div>
-                                <div class="column width-10">
-                                    <h5 class="weight-bold text-uppercase desinem">Business Hours</h5>
-                                    <p>
-                                        Mon - Sun: 1pm to 8:00pm (Cat Room)</br>
-                                        Mon - Sun: 8am to 8:00pm (Pet Supply and Coffee)
-                                    </p>
-                                </div>
+    {#    <div class="wave-bottom bkg-white pb-50">#}
+    {#        <svg class="svg2" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">#}
+    {#            <path d="M0,10 C150,80 250,0 500,10 L500,00 L0,0 z" style="stroke: none; fill:#d2b18f;"></path>#}
+    {#        </svg>#}
+    {#    </div>#}
+    {##}
+    <!-- Contact Form -->
+    <section class="section-block replicable-content contact-2 bkg-white">
+        <div class="row">
+            <div class="column width-4">
+                {#							<h2 class="mb-30 desinem">Contact Us</h2>#}
+                <div class="row">
+                    {#								<div class="column width-10">#}
+                    {#									<p>Shoot us an email! We'll get back to you within 24hrs.</p>#}
+                    {#								</div>#}
+                    <div class="column width-10">
+                        <h5 class="weight-bold text-uppercase desinem">Give us a ring</h5>
+                        <p>+(1) 236-234-4488</p>
+                    </div>
+                    <div class="column width-10">
+                        <h5 class="weight-bold text-uppercase desinem">Email Us 24/7</h5>
+                        <p>
+                            <a href="mailto:info@petpls.ca">info@petpls.ca</a>
+                        </p>
+                    </div>
+                    <div class="column width-10">
+                        <h5 class="weight-bold text-uppercase desinem">Business Hours</h5>
+                        <table>
+                            <tbody class="business-hours">
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>CLOSED</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 8PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 9PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>12PM - 9PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>12PM - 9PM</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <p>CATROOM VISIT START AT 12PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column width-8 left">
+                <div class="contact-form-container">
+                    {% csrf_token %}
+                    <form id="contact-form" class="contact-form" action="{% url 'send_contact_email' %}" role="form"
+                          method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="column width-6 form-group input-group">
+                                <input type="text" name="fname" id="fname" class="form-control form-element large"
+                                       placeholder="Full Name" tabindex="1" required>
+                            </div>
+                            <div class="column width-6 form-group input-group">
+                                <input type="text" name="phone" id="phone" class="form-control form-element large"
+                                       placeholder="Phone Number" tabindex="2" required>
+                            </div>
+                            <div class="column width-12 form-group input-group">
+                                <input type="email" name="email" id="email" class="form-control form-element large"
+                                       placeholder="Email address*" tabindex="3" required>
                             </div>
                         </div>
-						<div class="column width-8 left">
-							<div class="contact-form-container">
-                                {% csrf_token %}
-								<form id="contact-form" class="contact-form" action="{% url 'send_contact_email' %}" role="form" method="post" enctype="multipart/form-data">
-									<div class="row">
-										<div class="column width-6 form-group input-group">
-											<input type="text" name="fname" id="fname" class="form-control form-element large" placeholder="Full Name" tabindex="1" required>
-										</div>
-                                        <div class="column width-6 form-group input-group">
-                                            <input type="text" name="phone" id="phone" class="form-control form-element large" placeholder="Phone Number" tabindex="2" required>
-                                        </div>
-										<div class="column width-12 form-group input-group">
-											<input type="email" name="email" id="email" class="form-control form-element large" placeholder="Email address*" tabindex="3" required>
-										</div>
-                                    </div>
-									<div class="row">
-										<div class="column width-12 form-group input-group">
-											<div class="field-wrapper">
-												<textarea name="msg" id="msg" class="form-control form-element large" placeholder="Message*" tabindex="7" required></textarea>
-											</div>
-										</div>
-{#										<div class="column width-12">#}
-{#											<div class="field-wrapper pt-10 pb-10">#}
-{#											 	<input id="checkbox-1" class="form-element checkbox" name="checkbox-1" type="checkbox" required>#}
-{#												<label for="checkbox-1" class="checkbox-label">I want to receive your newsletter</label>#}
-{#											</div>#}
-{#										</div>#}
-										<div class="column width-12">
-											<input id="form-submit" type="submit" value="SEND EMAIL" class="form-submit button medium bkg-brown bkg-hover-tan color-tan color-hover-brown rounded weight-bold">
-										</div>
-									</div>
-								</form>
-								<div class="form-response center" id="formResponse"></div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--Contact Form End -->
+                        <div class="row">
+                            <div class="column width-12 form-group input-group">
+                                <div class="field-wrapper">
+                                    <textarea name="msg" id="msg" class="form-control form-element large"
+                                              placeholder="Message*" tabindex="7" required></textarea>
+                                </div>
+                            </div>
+                            {#										<div class="column width-12">#}
+                            {#											<div class="field-wrapper pt-10 pb-10">#}
+                            {#											 	<input id="checkbox-1" class="form-element checkbox" name="checkbox-1" type="checkbox" required>#}
+                            {#												<label for="checkbox-1" class="checkbox-label">I want to receive your newsletter</label>#}
+                            {#											</div>#}
+                            {#										</div>#}
+                            <div class="column width-12">
+                                <input id="form-submit" type="submit" value="SEND EMAIL"
+                                       class="form-submit button medium bkg-brown bkg-hover-tan color-tan color-hover-brown rounded weight-bold">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="form-response center" id="formResponse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Form End -->
 
-{#    <h5 class="info-title">Give us a ring</h5>#}
-{#    <p class="description">#}
-{#        +(1) 604 545 1461</br>#}
-{#    </p>#}
-{#    </div>#}
-{#    </div>#}
-{#    <div class="info info-horizontal">#}
-{#        <div class="icon icon-primary">#}
-{#            <i class="now-ui-icons ui-1_email-85"></i>#}
-{#        </div>#}
-{#        <div class="description">#}
-{#            <h5 class="info-title">Email Us 24/7</h5>#}
-{#            <p class="description">#}
-{#                <a style="color: #ffffff;" href="mailto:info@greenteegolfzone.com">info@greenteegolfzone.com</a></br>#}
-{#            </p>#}
-{#        </div>#}
-{#    </div>#}
-{#    <div class="info info-horizontal">#}
-{#    <div class="icon icon-info">#}
-{#        <i class="now-ui-icons ui-2_time-alarm"></i>#}
-{#    </div>#}
-{#    <div class="description">#}
-{#        <h5 class="info-title">Business Hours</h5>#}
-{#        <p class="description">#}
-{#            Mon - Fri: 9am to 5pm (Pacific Standard Time)#}
-{#        </p>#}
-{#    </div>#}
+    {#    <h5 class="info-title">Give us a ring</h5>#}
+    {#    <p class="description">#}
+    {#        +(1) 604 545 1461</br>#}
+    {#    </p>#}
+    {#    </div>#}
+    {#    </div>#}
+    {#    <div class="info info-horizontal">#}
+    {#        <div class="icon icon-primary">#}
+    {#            <i class="now-ui-icons ui-1_email-85"></i>#}
+    {#        </div>#}
+    {#        <div class="description">#}
+    {#            <h5 class="info-title">Email Us 24/7</h5>#}
+    {#            <p class="description">#}
+    {#                <a style="color: #ffffff;" href="mailto:info@greenteegolfzone.com">info@greenteegolfzone.com</a></br>#}
+    {#            </p>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#    <div class="info info-horizontal">#}
+    {#    <div class="icon icon-info">#}
+    {#        <i class="now-ui-icons ui-2_time-alarm"></i>#}
+    {#    </div>#}
+    {#    <div class="description">#}
+    {#        <h5 class="info-title">Business Hours</h5>#}
+    {#        <p class="description">#}
+    {#            Mon - Fri: 9am to 5pm (Pacific Standard Time)#}
+    {#        </p>#}
+    {#    </div>#}
     <!-- Hero 5 Section -->
     <div class="section-block hero-5 right show-media-column-on-mobile bkg-charcoal">
         <div class="media-column width-6">
@@ -144,7 +180,12 @@
             <div class="column width-5">
                 <div class="hero-content split-hero-content">
                     <div class="hero-content-inner left">
-                        <p class="color-white">6386 No. 3 Rd #165,<br>Richmond,<br>BC V6Y 2B3, CANADA.</p>
+                        <p class="color-brown">6386 No. 3 Rd #165,<br>Richmond,<br>BC V6Y 2B3, CANADA.
+                            <br><br>
+                            our store is located right next to the bus station, opposite to the scotiabank and Richmond
+                            bridge house skytrain station . There is a parking under the building, the parking entrance
+                            is located on the cook road
+                        </p>
                     </div>
                 </div>
             </div>
@@ -152,10 +193,10 @@
     </div>
     <!-- Hero 5 Section End -->
 
-			{% endblock %}
+{% endblock %}
 {% block js %}
-{#    <script src="{% static 'js/plugins/form-validation/js/formValidation.min.js' %}" type="text/javascript"></script>#}
-{#    <script src="{% static 'js/plugins/form-validation/js/framework/bootstrap.min.js' %}"#}
-{#            type="text/javascript"></script>#}
-{#    <script src="{% static 'js/contact-form.js' %}" type="text/javascript"></script>#}
+    {#    <script src="{% static 'js/plugins/form-validation/js/formValidation.min.js' %}" type="text/javascript"></script>#}
+    {#    <script src="{% static 'js/plugins/form-validation/js/framework/bootstrap.min.js' %}"#}
+    {#            type="text/javascript"></script>#}
+    {#    <script src="{% static 'js/contact-form.js' %}" type="text/javascript"></script>#}
 {% endblock %}

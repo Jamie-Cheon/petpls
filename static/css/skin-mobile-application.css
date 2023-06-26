@@ -380,8 +380,8 @@ body,
 	color: #333;
 }
 .bkg-charcoal{
-	background-color: #232323; 
-	border-color: #232323;
+	background-color: #d2b18f;
+	/*border-color: #232323;*/
 }
 .bkg-hover-charcoal:hover{
 	background-color: #232323; 

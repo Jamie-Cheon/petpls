@@ -346,7 +346,13 @@ img[class*="treat-"] {
   margin: 40px auto;
   text-align: center;
 }
-
+.business-hours-table {
+    margin: auto;
+}
+.business-hours > tr > td {
+    width: 60%;
+        text-align: left;
+}
 .custom-btn {
   width: 130px;
   height: 40px;
